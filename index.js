@@ -41,7 +41,7 @@ app.post("/add-product", async (req, res) => {
   }
 });
 
-app.post("/search", async (req, res) => {
+app.get("/search", async (req, res) => {
   try {
     const searchTerm = req.query.search;
     const results = await client.search({
